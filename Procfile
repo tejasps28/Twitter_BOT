@@ -1,0 +1,1 @@
+worke: python mainbot.py
