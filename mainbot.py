@@ -2,7 +2,7 @@ import tweepy
 import os # operating system library
 
 def create_api():
-  consumer_key = os.getenv('consumer_key')
+  consumer_key = os.getenv('consumer_key')#API
   consumer_secret = os.getenv('consumer_secret')
   access_token = os.getenv('access_token')
   access_token_secret = os.getenv('access_token_secret')
@@ -31,7 +31,7 @@ api = create_api()
 
 while True:
     user = api.get_user('the_ameen_manna')
-    api.update_profile(name=f'AMEEN|{follower_count(user)} Followers')
-    print(f'Updating Twitter Name : AMEEN|{follower_count(user)} Followers')
+    api.update_profile(name=f'#Name|{follower_count(user)} Followers')
+    print(f'Updating Twitter Name : #Name|{follower_count(user)} Followers')
     print('Waiting to refresh')
     time.sleep(60)
